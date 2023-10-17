@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    animation: sky 5s 2s forwards;
+    background-color: rgb(68, 51, 3);
+}
+.sun{
+    background-color: #ff8c1a;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 5px #ff8c1a;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    animation: sunrise 15s forwards;
+}
+@keyframes sunrise {
+    100%{
+        transform: translateY(-500px);
+    }
+}
+@keyframes sky {
+    50%{
+       background-color: #615307;
+    }
+    65%{
+        background-color: #b49a06;
+    }
+    85%{
+        background-color: #b69b01;
+    }
+    100%{
+        background-color: #fdb611;
+    }
+}
